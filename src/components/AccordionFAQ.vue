@@ -29,13 +29,13 @@ const handleActive = () => {
     ref="accordionRef"
   >
     <div class="flex items-center justify-between">
-      <h3
+      <h2
         class="text-fm-very-dark-grayish-blue text-[15px] mb-3 transition-all ease-out duration-300 hover:text-fm-soft-red cursor-pointer"
         :class="{ 'text-black font-bold': isActive }"
         @click="handleActive"
       >
         {{ props.question }}
-      </h3>
+      </h2>
       <button class="mb-2" @click="handleActive">
         <img
           src="../assets/images/icon-arrow-down.svg"
